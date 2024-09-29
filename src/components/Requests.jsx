@@ -9,12 +9,12 @@ const Requests = () => {
 
     const requests=useSelector((store)=>store.requests)
     const dispatch=useDispatch()
-    console.log(requests)
+    // console.log(requests)
     const fetchRequest=async()=>{
         // if(requests) return;
         try{
             const {data}=await axios.get(BASE_URL+"/user/requests/received",{withCredentials:true})
-            console.log(data?.data);
+            // console.log(data?.data);
             dispatch(addRequests(data?.data))
         }catch(error){
             console.log(error)

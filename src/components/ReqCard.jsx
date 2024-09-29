@@ -1,10 +1,8 @@
-import axios from 'axios';
-import React from 'react'
-import { BASE_URL } from '../constants';
+
 
 const ReqCard = ({reqId, userdetails, handleRequest }) => {
     const {firstName,lastName, age,gender,photoUrl,about}=userdetails;
-    
+
 
 
   return (

@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const UserCard = ({userdetails, handleInterest}) => {
     const {_id,firstName,lastName, age,gender,photoUrl,about}=userdetails;
