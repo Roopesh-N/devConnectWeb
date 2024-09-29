@@ -28,7 +28,7 @@ const Feed = () => {
     const handleInterest=async(status,userId)=>{
       try{
         const {data}=await axios.post(BASE_URL+"/request/send/"+status+"/" + userId,{},{withCredentials:true})
-        console.log(data)
+        // console.log(data)
         setshowtoast(true);
         notifyMessage.current="Interested"
         dispatch(removeFeed());

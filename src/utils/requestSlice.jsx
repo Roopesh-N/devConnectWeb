@@ -12,7 +12,7 @@ const requestSlice=createSlice({
             let newReqList=state.filter((req)=>req._id!=action.payload); 
             return newReqList
         },
-        clearRequests:(state,action)=>{
+        clearRequests:()=>{
             return null;
         }
     }
